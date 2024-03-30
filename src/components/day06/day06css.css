@@ -1,0 +1,134 @@
+.containerD06 {
+  height: 370px;
+  width: 400px;
+  border-radius: 0.3rem;
+  font-family: 'Courier New', Courier, monospace;
+
+  display: grid;
+  grid-template-columns: 0.65fr 0.35fr;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.6);
+
+  color: #958676;
+  aspect-ratio: 1/1;
+  background: #FFE2A6;
+  background: radial-gradient(at left bottom, #FFE2A6, #FFB657);
+}
+
+.left06{
+  height: 80%;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foto06{
+  height: 8.9rem;
+  width: 8.9rem;
+  background-image: url(IMG_0091.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.377);
+}
+
+.foto06::before{
+  content: "";
+  position: absolute;
+  width: 9.2rem;
+  height: 9.2rem;
+  top: -0.16rem;
+  left: -0.17rem;
+  border: 1px solid;
+  border-color: #786450 #786450 #786450 transparent;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.foto06:hover:before{
+  transform: rotateZ(360deg);
+}
+
+.foto06::after{
+  content: "";
+  position: absolute;
+  width: 9.7rem;
+  height: 9.7rem;
+  top: -0.4rem;
+  left: -0.42rem;
+  border: 1px solid;
+  border-color: #786450 transparent #786450 #786450 ;
+  border-radius: 50%;
+  transition: all 1.5s ease-in-out;
+}
+
+.foto06:hover:after{
+  transform: rotateZ(-360deg);
+}
+
+.name06{
+  text-align: center;
+  height: 20%;
+  font-size: 1.3rem;
+}
+
+.links06{
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 55%;
+  gap: 10%;
+  font-weight: bold;
+}
+
+.link06{
+  height: 40%;
+  border-radius: 30px;
+  border: 2px solid #958676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.link06:hover{
+  color: white;
+  background-color: #786450;
+  transition: 500ms ease-in-out;
+}
+
+/*right*/
+
+.right06{
+  display: flex;
+  flex-direction: column;
+}
+
+.info06{
+  background-color: #f5e8df;
+  height: 33.3%;
+  width: 100%;
+  border: 1px solid white;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: 500ms ease-in-out;
+}
+
+.info06 span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.info06:hover{
+background-color: #d6c6bb;
+}

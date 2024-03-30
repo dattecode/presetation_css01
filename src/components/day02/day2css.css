@@ -1,0 +1,125 @@
+.containerD2 {
+  height: 300px;
+  width: 300px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background-color: #3faf82;
+}
+
+.menu {
+  aspect-ratio: 1/1;
+  width: 12vw;
+  display: flex;
+  flex-direction: column;
+  gap: 12%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.text {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menu > span {
+  height: 10%;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.3rem;
+  filter: drop-shadow(1px 1px 10px #0000004f);
+}
+
+/*reverse*/
+
+.line3 {
+  animation: buttomRev 700ms ease-in-out backwards;
+}
+@keyframes buttomRev {
+  0% {
+    transform: translateY(-225%) rotate(135deg);
+  }
+  50% {
+    transform: translateY(-225%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.line2 {
+  animation: centroRev 700ms ease-in-out forwards;
+}
+@keyframes centroRev {
+  0%,
+  50% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+.line1 {
+  animation: topRev 700ms ease-in-out forwards;
+}
+
+@keyframes topRev {
+  0% {
+    transform: translateY(225%) rotate(45deg);
+  }
+  50% {
+    transform: translateY(225%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+/*reverse2*/
+
+.top {
+  animation: top 700ms ease-in-out forwards;
+}
+
+@keyframes top {
+
+  50% {
+    transform: translateY(225%);
+  }
+  100% {
+    transform: translateY(225%) rotate(45deg);
+  }
+}
+
+.centro {
+  animation: centro 700ms ease-in-out forwards;
+}
+
+@keyframes centro {
+  0% {
+    scale: 1;
+  }
+  50%,
+  100% {
+    scale: 0;
+  }
+}
+
+.buttom {
+  animation: buttom 700ms ease-in-out forwards;
+}
+
+@keyframes buttom {
+
+  50% {
+    transform: translateY(-225%);
+  }
+  100% {
+    transform: translateY(-225%) rotate(135deg);
+  }
+}

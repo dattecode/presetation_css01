@@ -1,0 +1,259 @@
+.container07 {
+  height: 400px;
+  width: 500px;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background-color: #264057;
+  aspect-ratio: 1/1;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+}
+
+.note07 {
+  position: absolute;
+  height: 90%;
+  width: 90%;
+  background-color: white;
+
+  transition: 500ms ease-in-out;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.61);
+  z-index: 2;
+}
+
+.active {
+  transform: translateX(35%);
+  z-index: 2;
+}
+
+/*header*/
+
+.header07 {
+  position: relative;
+  height: 20%;
+  width: 100%;
+  background-color: #5f98cd;
+
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  place-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.menuIcon07 {
+  position: relative;
+  width: 45px;
+  height: 25px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dashTop07 {
+  width: 27px;
+  height: 5px;
+  top: 0;
+  left: 0;
+  background-color: #b2daff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+}
+
+.dashBut07 {
+  position: absolute;
+  width: 40px;
+  height: 5px;
+  top: 15px;
+  left: 0;
+  background-color: #b2daff;
+  border-radius: 3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.dashCircle07 {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #b2daff;
+  right: 10%;
+  top: -5%;
+  transition: all 0.2s ease-in-out;
+}
+
+.menuIcon07:hover .dashTop07,
+.menuIcon07:hover .dashBut07,
+.menuIcon07:hover .dashCircle07 {
+  background-color: white;
+}
+
+.search07{
+  color: #b2daff;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.search07:hover{
+  color: white;
+}
+
+.text07{
+  position: absolute;
+  height: 50%;
+  width: 78%;
+  border: 40px;
+  border: none;
+  outline: none;
+  text-align: center;
+  border-radius: 2rem;
+  opacity: 0;
+  right: 15%;
+  transition: 300ms ease-in-out;
+}
+
+.input{
+  transition: 300ms ease-in-out;
+  opacity: 100%;
+  right: 20%;
+  z-index: 2;
+}
+
+/*header*/
+
+/*Lista*/
+
+.lista07{
+  height: 80%;
+  width: 80%;
+  background-color: #43627d;
+
+  display: flex;
+  align-items: center;
+  transition: 500ms ease-in-out;
+  font-size: 20px;
+}
+
+.listActive{
+  transform: translateX(-30px);
+  transition: 500ms ease-in-out;
+}
+
+.list07{
+  height: 90%;
+  margin-left: 0.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #93b2cd;
+}
+
+.list07 li{
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list07 li:hover{
+  color: white;
+  transition: 300ms ease-in-out;
+}
+
+.list07 {
+  list-style: none;
+}
+
+/*Lista*/
+
+/*Notification*/
+
+.notifications07{
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  color: rgb(116, 116, 116);
+}
+
+.line07{
+  position: absolute;
+  top: 0;
+  left: 27px;
+  bottom: 0;
+  width: 3px;
+  height: 18rem;
+  background: #ebebeb;
+}
+
+.notification07{
+  height: 20%;
+  position: relative;
+  z-index: 2;
+  margin: 25px 20px 25px 45px;
+  opacity: 0;
+  animation: entrada ease-in-out 1s;
+  animation-fill-mode: forwards;
+  transition: 0.3s ease-in-out;
+}
+
+.notification07:nth-child(2){
+  animation-delay: 0.2s;
+}
+.notification07:nth-child(3){
+  animation-delay: 0.4s;
+}
+.notification07:nth-child(4){
+  animation-delay: 0.6s;
+}
+
+@keyframes entrada{
+  0%{
+    transform: translate3d(0, 100px,0);
+    opacity: 0;
+  }
+  100%{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+.notification07:hover{
+  color: #5f98cd;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.circles07{
+  box-sizing: border-box;
+  position: absolute;
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #5f98cd;
+  top: 2px;
+  left: -25px;
+}
+
+.time07{
+  display: block;
+  font-size: 1.3rem;
+  line-height: 20px;
+  margin-bottom: 2px;
+}
+
+
+/*Notification*/
+

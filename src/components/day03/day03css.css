@@ -1,0 +1,171 @@
+
+.containerD3 {
+  height: 300px;
+  width: 300px;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+  background-color: #292e3b;
+  aspect-ratio: 1/1;
+}
+
+.containerPiramid{
+  aspect-ratio: 1/1;
+  width: 40vh;
+  border-radius: 50%;
+  background-color: #75cfeb;
+
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: desaparecerD3 3.5s linear infinite;
+}
+
+@keyframes desaparecerD3{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+.suelo{
+  position: absolute;
+  height: 50%;
+  width: 100%;
+  background-color: #dece6f;
+  top: 64.0%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sombra{
+  height: 100%;
+  width: 150%;
+  background-color: rgba(0, 0, 0, 0.25);
+  
+  clip-path: polygon(15% 0, 100% 20%, 85% 0);
+
+  animation: sombraD3 3.5s linear infinite;
+}
+
+@keyframes sombraD3{
+  0%{
+    clip-path: polygon(15% 0, 100% 20%, 85% 0);
+  }
+  30%{
+    clip-path: polygon(15% 0, 100% 40%, 85% 0);
+  }
+  50%{
+    clip-path: polygon(15% 0, 100% 40%, 85% 0);
+  }
+  100%{
+    clip-path: polygon(15% 0, 0% 50%, 84% 0);
+  }
+}
+
+.piramide{
+  position: absolute;
+  height: 30%;
+  width: 70%;
+  display: flex;
+}
+
+.ladoI{
+  height: 100%;
+  width: 70%;
+  background-color: #f0f0f0;
+  clip-path: polygon(79% 0%, 0% 100%, 100% 100%);
+  position: absolute;
+  z-index: 1;
+  animation: cambioI 3.5s linear infinite;
+}
+
+@keyframes cambioI{
+  0%{
+    background-color: #c3c1c3;
+  }
+  30%{
+    background-color: #dadada;
+  }
+  70%{
+    background-color: #dadada;
+  }
+  100%{
+    background-color: #919191;
+  }
+}
+
+.ladoK{
+  position: absolute;
+  height: 100%;
+  width: 70%;
+  background-color: #c3c1c3;
+  clip-path: polygon(36% 0%, 0% 100%, 100% 100%);
+  left: 30%;
+  animation: cambioK 3.5s linear infinite;
+}
+
+@keyframes cambioK{
+  0%{
+    background-color: #919191;
+  }
+  30%{
+    background-color: #c3c1c3;
+  }
+  50%{
+    background-color: #c3c1c3;
+  }
+  100%{
+    background-color: #e0e0e0;
+  }
+}
+
+.solFondo{
+  position: absolute;
+  height: 170%;
+  width: 170%;
+  top: 40%;
+  transform: rotate(0deg);
+  animation: girar 3.5s linear infinite;
+}
+
+@keyframes girar{
+  0%{
+    transform: rotateZ(0deg);
+  }
+  30%{
+    transform: rotateZ(30deg);
+  }
+  50%{
+    transform: rotateZ(30deg);
+  }
+  100%{
+    transform: rotateZ(90deg);
+  }
+}
+
+.sol{
+  position: absolute;
+  height: 13%;
+  width: 13%;
+  border-radius: 50%;
+  background-color: #fee401;
+}
+

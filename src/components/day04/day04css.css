@@ -1,0 +1,126 @@
+.containerD04 {
+  height: 300px;
+  width: 300px;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #e56262;
+  aspect-ratio: 1/1;
+}
+
+.containerD4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 50%
+}
+
+.esfera1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  filter: drop-shadow(10px 10px 5px #0000002f);
+
+  animation: esfera01 4s linear infinite;
+}
+
+@keyframes esfera01 {
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 1;
+  }
+  40% {
+    scale: 1;
+  }
+  60% {
+    scale: 1;
+  }
+  70% {
+    scale: 1;
+  }
+  85%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
+
+.esfera2{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  filter: drop-shadow(8px 8px 3px #0000002f);
+  animation: esfera02 4s linear infinite;
+}
+
+@keyframes esfera02 {
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0;
+  }
+  40% {
+    scale: 1;
+  }
+  60% {
+    scale: 1;
+  }
+  70% {
+    scale: 1;
+  }
+  90%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
+
+.esfera3{
+  height: 50%;
+  width: 50%;
+  border-radius: 50%;
+  background-color: white;
+  filter: drop-shadow(8px 8px 3px #0000002f);
+  animation: esfera03 4s linear infinite;
+}
+
+@keyframes esfera03 {
+  0% {
+    scale: 0;
+  }
+  20% {
+    scale: 0;
+  }
+  40% {
+    scale: 1;
+  }
+  60% {
+    scale: 1;
+  }
+  70% {
+    scale: 0;
+  }
+  90%{
+    scale: 0;
+  }
+  100%{
+    scale: 0;
+  }
+}
